@@ -2,110 +2,324 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Holy Majestics | Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Holy Majestics | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      color: #222;
+    }
+
+    header {
+      background: #111827;
+      color: #fff;
+      padding: 20px 16px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 8px 0;
+      font-size: 32px;
+    }
+
+    header p {
+      margin: 4px 0;
+      font-size: 16px;
+      opacity: 0.9;
+    }
+
+    nav {
+      margin-top: 12px;
+    }
+
+    nav a {
+      color: #9ca3af;
+      margin: 0 8px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    .hero-buttons {
+      margin-top: 16px;
+    }
+
+    .hero-buttons a {
+      display: inline-block;
+      margin: 4px 8px;
+      padding: 8px 14px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .btn-primary {
+      background: #2563eb;
+      color: #fff;
+    }
+
+    .btn-secondary {
+      border: 1px solid #fff;
+      color: #fff;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 24px 16px 40px;
+      background: #fff;
+    }
+
+    section {
+      margin-bottom: 32px;
+    }
+
+    section h2 {
+      font-size: 24px;
+      margin-bottom: 12px;
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 4px;
+    }
+
+    p {
+      line-height: 1.5;
+      margin: 8px 0;
+    }
+
+    #skills ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    #skills li {
+      background: #f3f4f6;
+      display: inline-block;
+      margin: 4px 6px 4px 0;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    #projects .project {
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 16px;
+      background: #fafafa;
+    }
+
+    #projects .project h3 {
+      margin-top: 0;
+      margin-bottom: 6px;
+    }
+
+    #projects .project p {
+      margin: 4px 0;
+    }
+
+    #projects .project a {
+      color: #2563eb;
+    }
+
+    #goals p {
+      max-width: 650px;
+    }
+
+    #contact ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    #contact li {
+      margin-bottom: 4px;
+    }
+
+    #contact a {
+      color: #2563eb;
+    }
+
+    footer {
+      text-align: center;
+      padding: 16px;
+      font-size: 13px;
+      color: #6b7280;
+      background: #f9fafb;
+    }
+
+    footer span {
+      display: block;
+    }
+
+    /* Back to top button */
+    #back-to-top {
+      position: fixed;
+      bottom: 16px;
+      right: 16px;
+      padding: 8px 12px;
+      background: #111827;
+      color: #fff;
+      border-radius: 4px;
+      font-size: 13px;
+      cursor: pointer;
+      display: none;
+    }
+  </style>
 </head>
 <body>
-<div class="page">
-    <header class="header">
-        <div class="logo">Holy Majestics</div>
-        <nav class="nav">
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
 
-    <main>
-        <section class="hero" id="top">
-            <div class="hero-text">
-                <h1>Hi, I’m <span class="accent">Holy Majestics</span></h1>
-                <p class="hero-subtitle">
-                    Junior Programmer. I make bots for Telegram and Discord and I’m learning how to build websites.
-                </p>
-                <div class="hero-actions">
-                    <a href="#projects" class="btn primary">View projects</a>
-                    <a href="#contact" class="btn ghost">Contact me</a>
-                </div>
-            </div>
-        </section>
+  <header>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#goals">What I\'m looking for</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-        <section id="about" class="section">
-            <h2>About me</h2>
-            <p>
-                I’m a junior programmer who likes building small useful things for people around me.
-                I make bots for Telegram and Discord, experiment with automation, and learn how to create modern web pages.
-                I enjoy improving my code step by step and trying new technologies.
-            </p>
-        </section>
+    <h1>Holy Majestics</h1>
+    <p>Junior Programmer. I make bots for Telegram and Discord and I’m learning how to build websites.</p>
 
-        <section id="skills" class="section">
-            <h2>Skills</h2>
-            <div class="tags">
-                <span class="tag">Python</span>
-                <span class="tag">Telegram bots</span>
-                <span class="tag">Discord bots</span>
-                <span class="tag">HTML</span>
-                <span class="tag">CSS</span>
-                <span class="tag">Junior programmer</span>
-            </div>
-        </section>
+    <div class="hero-buttons">
+      <a href="#projects" class="btn-primary">View projects</a>
+      <a href="#contact" class="btn-secondary">Contact me</a>
+    </div>
+  </header>
 
-        <section id="projects" class="section">
-            <h2>Projects</h2>
-            <div class="cards">
-                <article class="card">
-                    <h3>Telegram bot</h3>
-                    <p>
-                        A simple Telegram bot that automates basic tasks and helps with daily routines.
-                        I use it to experiment with commands, APIs, and new features.
-                    </p>
-                    <span class="card-link">GitHub link coming soon</span>
-                </article>
+  <main>
+    <section id="about">
+      <h2>About me</h2>
+      <p>
+        I’m a junior programmer who likes building small useful things for people around me.
+        I make bots for Telegram and Discord, experiment with automation, and learn how to create modern web pages.
+        I enjoy improving my code step by step and trying new technologies.
+      </p>
+    </section>
 
-                <article class="card">
-                    <h3>Discord bot</h3>
-                    <p>
-                        A Discord bot for servers, focused on utility and fun commands.
-                        I use it to learn about events, permissions, and integrating with Discord APIs.
-                    </p>
-                    <span class="card-link">GitHub link coming soon</span>
-                </article>
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Python</li>
+        <li>Telegram bots</li>
+        <li>Discord bots</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Junior programmer</li>
+      </ul>
+    </section>
 
-                <article class="card">
-                    <h3>Web learning project</h3>
-                    <p>
-                        A small web project where I practice HTML and CSS and build my own layouts.
-                        This portfolio is part of that learning process.
-                    </p>
-                    <span class="card-link">GitHub link coming soon</span>
-                </article>
-            </div>
-        </section>
+    <section id="projects">
+      <h2>Projects & Bot Hub</h2>
+      <p>Here are some of the small tools and bots I\'m building and improving step by step.</p>
 
-        <section id="contact" class="section">
-            <h2>Contact</h2>
-            <p>
-                If you want to talk, ask questions, or see my bots in action, you can find me here:
-            </p>
-            <ul class="contact-list">
-                <li>Email: <a href="mailto:miwuniversal@icloud.com">miwuniversal@icloud.com</a></li>
-                <li>Discord: <span class="accent">holymajestics</span></li>
-                <li>Discord server: <a href="https://discord.gg/Ux2ds53z6H" target="_blank">Join my server</a></li>
-            </ul>
-        </section>
-    </main>
+      <div class="project">
+        <h3>Telegram Assistant Bot</h3>
+        <p>
+          A Telegram bot that helps with daily routines: quick reminders, simple notes, and small utilities.
+          I use it to experiment with commands, APIs, and new features.
+        </p>
+        <p><strong>Tech:</strong> Python, aiogram, SQLite (or JSON), Telegram Bot API</p>
+        <p>
+          <!-- Replace with your real bot username and repo -->
+          <a href="https://t.me/your_bot_username_here" target="_blank">Try the bot</a> |
+          <a href="https://github.com/holymajestics/telegram-assistant-bot" target="_blank">View code</a>
+        </p>
+      </div>
 
-    <footer class="footer">
-        © <span id="year"></span> Holy Majestics. All rights reserved.
-    </footer>
-</div>
+      <div class="project">
+        <h3>Discord Utility Bot</h3>
+        <p>
+          A Discord bot focused on utility and fun commands: role helpers, simple moderation tools,
+          and small games. I use it to learn events, permissions, and integrations with Discord APIs.
+        </p>
+        <p><strong>Tech:</strong> Python, discord.py (or similar library), REST APIs</p>
+        <p>
+          <!-- Replace YOUR_CLIENT_ID with your real Discord bot client ID -->
+          <a href="https://discord.com/api/oauth2/authorize?client_id=YOUR_CLIENT_ID&permissions=0&scope=bot"
+             target="_blank">Invite to your server</a> |
+          <a href="https://github.com/holymajestics/discord-utility-bot" target="_blank">View code</a>
+        </p>
+      </div>
 
-<script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-</script>
+      <div class="project">
+        <h3>Portfolio & Web Learning</h3>
+        <p>
+          This website is part of my web learning project. I practice HTML, CSS, and basic JavaScript
+          by building and improving my personal portfolio.
+        </p>
+        <p><strong>Tech:</strong> HTML, CSS, a bit of JavaScript</p>
+        <p>
+          <!-- Replace with your real site repo if needed -->
+          <a href="https://github.com/holymajestic/my-site" target="_blank">View site code</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="goals">
+      <h2>What I\'m looking for</h2>
+      <p>
+        I’m interested in small projects and collaborations where I can build bots for Telegram or Discord,
+        help automate simple tasks, or practice front-end development.
+      </p>
+      <p>
+        If you need a simple bot, a small automation, or a basic landing page, feel free to contact me.
+        I\'m always open to learning and trying new ideas.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>If you want to talk, ask questions, or see my bots in action, you can find me here:</p>
+      <ul>
+        <li>Email: <a href="mailto:miwuniversal@icloud.com">miwuniversal@icloud.com</a></li>
+        <li>Discord: holymajestics</li>
+        <li>Discord server:
+          <a href="https://discord.gg/Ux2ds53z6H" target="_blank">Join my server</a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 Holy Majestics. All rights reserved.</span>
+  </footer>
+
+  <button id="back-to-top">Top</button>
+
+  <script>
+    // Smooth scroll for nav links
+    document.querySelectorAll('nav a, .hero-buttons a').forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        const href = link.getAttribute('href');
+        if (href && href.startsWith('#')) {
+          e.preventDefault();
+          const target = document.querySelector(href);
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      });
+    });
+
+    // Back to top button
+    const backToTop = document.getElementById('back-to-top');
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 200) {
+        backToTop.style.display = 'block';
+      } else {
+        backToTop.style.display = 'none';
+      }
+    });
+
+    backToTop.addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
 </body>
 </html>

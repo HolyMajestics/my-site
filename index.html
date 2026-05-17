@@ -3,158 +3,101 @@
 <head>
   <meta charset="UTF-8">
   <title>Holy Majestics | Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <header>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#goals">What I&apos;m looking for</a>
-      <a href="#contact">Contact</a>
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="logo">Holy Majestics</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#goals">What I'm looking for</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
 
-    <h1>Holy Majestics</h1>
-    <p>Junior Programmer. I make bots for Telegram and Discord and I’m learning how to build websites.</p>
-
-    <div class="hero-buttons">
-      <a href="#projects" class="btn-primary">View projects</a>
-      <a href="#contact" class="btn-secondary">Contact me</a>
-    </div>
+    <section class="hero">
+      <p class="hero-label">Junior Programmer</p>
+      <h1>I build bots and learn web development</h1>
+      <p class="hero-text">
+        I make bots for Telegram and Discord and I’m learning how to build websites.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View projects</a>
+        <a href="#contact" class="btn btn-secondary">Contact me</a>
+      </div>
+    </section>
   </header>
 
   <main>
-    <section id="about">
-      <h2>About me</h2>
+    <section id="about" class="section">
+      <h2>About</h2>
       <p>
-        I’m a junior programmer who likes building small useful things for people around me.
-        I make bots for Telegram and Discord, experiment with automation, and learn how to create modern web pages.
-        I enjoy improving my code step by step and trying new technologies.
+        I'm a junior developer experimenting with Python, bots, and web technologies.
+        I enjoy automating communities and building tools that help people.
       </p>
     </section>
 
-    <section id="skills">
+    <section id="skills" class="section">
       <h2>Skills</h2>
-      <ul>
-        <li>Python</li>
-        <li>Telegram bots</li>
-        <li>Discord bots</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Junior programmer</li>
-      </ul>
-    </section>
-
-    <section id="projects">
-      <h2>Projects &amp; Bot Hub</h2>
-      <p>Here are some of the small tools and bots I&apos;m building and improving step by step.</p>
-
-      <div class="project">
-        <h3>Telegram Assistant Bot</h3>
-        <p>
-          A Telegram bot that helps with daily routines: quick reminders, simple notes, and small utilities.
-          I use it to experiment with commands, APIs, and new features.
-        </p>
-        <p><strong>Tech:</strong> Python, aiogram, SQLite (or JSON), Telegram Bot API</p>
-        <p>
-          <!-- Replace with your real bot username and repo -->
-          <a href="https://t.me/your_bot_username_here" target="_blank">Try the bot</a> |
-          <a href="https://github.com/holymajestics/telegram-assistant-bot" target="_blank">View code</a>
-        </p>
-      </div>
-
-      <div class="project">
-        <h3>Discord Utility Bot</h3>
-        <p>
-          A Discord bot focused on utility and fun commands: role helpers, simple moderation tools,
-          and small games. I use it to learn events, permissions, and integrations with Discord APIs.
-        </p>
-        <p><strong>Tech:</strong> Python, discord.py (or similar library), REST APIs</p>
-        <p>
-          <!-- Replace YOUR_CLIENT_ID with your real Discord bot client ID -->
-          <a href="https://discord.com/api/oauth2/authorize?client_id=YOUR_CLIENT_ID&permissions=0&scope=bot"
-             target="_blank">Invite to your server</a> |
-          <a href="https://github.com/holymajestics/discord-utility-bot" target="_blank">View code</a>
-        </p>
-      </div>
-
-      <div class="project">
-        <h3>Portfolio &amp; Web Learning</h3>
-        <p>
-          This website is part of my web learning project. I practice HTML, CSS, and basic JavaScript
-          by building and improving my personal portfolio.
-        </p>
-        <p><strong>Tech:</strong> HTML, CSS, a bit of JavaScript</p>
-        <p>
-          <!-- Replace with your real site repo if needed -->
-          <a href="https://github.com/holymajestic/my-site" target="_blank">View site code</a>
-        </p>
+      <div class="skills-grid">
+        <div class="card">
+          <h3>Python & Bots</h3>
+          <p>Telegram bots, Discord bots, basic database integration and small utilities.</p>
+        </div>
+        <div class="card">
+          <h3>Web basics</h3>
+          <p>HTML, CSS, and a growing understanding of clean, responsive layouts.</p>
+        </div>
+        <div class="card">
+          <h3>Tools</h3>
+          <p>GitHub, IDEs, and deployment platforms for bots and simple sites.</p>
+        </div>
       </div>
     </section>
 
-    <section id="goals">
-      <h2>What I&apos;m looking for</h2>
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="card">
+          <h3>Telegram bot hub</h3>
+          <p>A collection of small bots that help manage chats and provide utilities.</p>
+        </div>
+        <div class="card">
+          <h3>Discord utilities</h3>
+          <p>Bots for moderation, logging events, and adding quality-of-life commands.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="goals" class="section">
+      <h2>What I'm looking for</h2>
       <p>
-        I’m interested in small projects and collaborations where I can build bots for Telegram or Discord,
-        help automate simple tasks, or practice front-end development.
+        I'm looking for opportunities to work on real-world projects where I can improve
+        my Python and web skills, especially around bots, APIs, and small web tools.
       </p>
       <p>
-        If you need a simple bot, a small automation, or a basic landing page, feel free to contact me.
-        I&apos;m always open to learning and trying new ideas.
+        I'm interested in internships, junior positions, or collaborations with people
+        who need automation for their communities or workflows.
       </p>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="section">
       <h2>Contact</h2>
-      <p>If you want to talk, ask questions, or see my bots in action, you can find me here:</p>
-      <ul>
-        <li>Email: <a href="mailto:miwuniversal@icloud.com">miwuniversal@icloud.com</a></li>
-        <li>Discord: holymajestics</li>
-        <li>Discord server:
-          <a href="https://discord.gg/Ux2ds53z6H" target="_blank">Join my server</a>
-        </li>
+      <p>You can reach me via:</p>
+      <ul class="contact-list">
+        <li>Telegram: <a href="https://t.me/your_username" target="_blank">@your_username</a></li>
+        <li>Discord: <span>your_discord_tag</span></li>
+        <li>Email: <a href="mailto:you@example.com">you@example.com</a></li>
       </ul>
     </section>
   </main>
 
-  <footer>
-    <span>© 2026 Holy Majestics. All rights reserved.</span>
+  <footer class="site-footer">
+    <p>© 2026 Holy Majestics. Built by me while learning the web.</p>
   </footer>
-
-  <button id="back-to-top">Top</button>
-
-  <script>
-    // Smooth scroll for nav links
-    document.querySelectorAll('nav a, .hero-buttons a').forEach(function(link) {
-      link.addEventListener('click', function(e) {
-        const href = link.getAttribute('href');
-        if (href && href.startsWith('#')) {
-          e.preventDefault();
-          const target = document.querySelector(href);
-          if (target) {
-            target.scrollIntoView({ behavior: 'smooth' });
-          }
-        }
-      });
-    });
-
-    // Back to top button
-    const backToTop = document.getElementById('back-to-top');
-    window.addEventListener('scroll', function() {
-      if (window.scrollY > 200) {
-        backToTop.style.display = 'block';
-      } else {
-        backToTop.style.display = 'none';
-      }
-    });
-
-    backToTop.addEventListener('click', function() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-  </script>
 </body>
 </html>
-// hehe
